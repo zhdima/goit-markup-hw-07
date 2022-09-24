@@ -3,10 +3,7 @@
 .main-btn {
   min-height: 50px;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
+  @include font-pars(700, 16px, 30px, 0.06em);
   color: var(--inverse-text-color);
   background-color: var(--accent-color);
   cursor: pointer;

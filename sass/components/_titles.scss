@@ -2,9 +2,7 @@
 .ourteam__title,
 .clients__title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include font-pars(700, 36px, 42px);
   text-align: center;
   color: var(--title-text-color);
 }

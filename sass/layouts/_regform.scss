@@ -3,9 +3,7 @@
 .regform-title {
   display: block;
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  @include font-pars(700, 20px, 23px);
   text-align: center;
   color: var(--title-text-color);
 }
@@ -25,9 +23,7 @@
 .regform-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font-pars(false, 12px, 14px, 0.01em);
 }
 
 .regform-input-wrap {
@@ -68,9 +64,7 @@
   resize: none;
   height: 120px;
   padding: 12px 16px;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font-pars(false, 12px, 14px, 0.01em);
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -103,8 +97,7 @@
 
 .regform-check-label {
   user-select: none;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  @include font-pars(false, 14px, 24px);
 }
 
 .regform-check-link {
