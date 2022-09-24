@@ -1,0 +1,41 @@
+/* Header */
+
+.header {
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__contacts-list {
+  @extend %flex-center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.header__contact-link {
+  @extend %flex-center;
+  gap: 10px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+
+  transition: color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__contact-icon {
+  fill: currentColor;
+}

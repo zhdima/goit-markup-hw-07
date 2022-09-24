@@ -1,0 +1,35 @@
+/* Section Features */
+
+.features {
+  padding-bottom: 0;
+}
+
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  flex-basis: calc((100% - 30px * 3) / 4);
+}
+
+.feature__header {
+  @extend %flex-center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--grey-bg-color);
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}

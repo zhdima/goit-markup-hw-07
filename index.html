@@ -22,34 +22,34 @@
       referrerpolicy="no-referrer"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
-        <nav class="nav">
-          <a class="plink logo nav-logo" href="./index.html" lang="en">
-            <span class="accentlogo">Web</span>Studio</a
+      <div class="header__container container">
+        <nav class="nav header__nav">
+          <a class="logo nav__logo plink" href="./index.html" lang="en">
+            <span class="logo__accentpart">Web</span>Studio</a
           >
-          <ul class="plist nav-list">
-            <li><a class="plink nav-link current" href="./index.html">Студія</a></li>
-            <li><a class="plink nav-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="plink nav-link" href="">Контакти</a></li>
+          <ul class="nav__list plist">
+            <li><a class="nav__link plink nav__link--current" href="./index.html">Студія</a></li>
+            <li><a class="nav__link plink" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="nav__link plink" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="plist header-contacts-list">
+        <ul class="header__contacts-list plist">
           <li lang="en"
-            ><a class="plink header-contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts-icon" width="16" height="12">
+            ><a class="header__contact-link plink" href="mailto:info@devstudio.com">
+              <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             ></li
           >
           <li
-            ><a class="plink header-contacts-link" href="tel:+380961111111">
-              <svg class="header-contacts-icon" width="10" height="16">
+            ><a class="header__contact-link plink" href="tel:+380961111111">
+              <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,111 +63,114 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="overlay">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
+        <div class="hero__overlay">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__btn main-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <!-- Переваги -->
-      <section class="section advs">
-        <div class="container">
-          <h2 class="advs-title visually-hidden">Наші переваги</h2>
-          <ul class="plist advs-list">
-            <li class="advs-item">
-              <div class="advs-item-header">
-                <svg class="advs-item-icon" width="70" height="70">
+
+      <!-- Переваги Features -->
+      <section class="features section">
+        <div class="features__container container">
+          <h2 class="features__title visually-hidden">Наші переваги</h2>
+          <ul class="features__list plist">
+            <li class="feature features__item">
+              <div class="feature__header">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="advs-item-title">Увага до деталей</h3>
-              <p class="advs-item-text"
+              <h3 class="feature__title">Увага до деталей</h3>
+              <p class="feature__text"
                 >Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p
               >
             </li>
-            <li class="advs-item">
-              <div class="advs-item-header">
-                <svg class="advs-item-icon" width="70" height="70">
+            <li class="feature features__item">
+              <div class="feature__header">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="advs-item-title">Пунктуальність</h3>
-              <p class="advs-item-text"
+              <h3 class="feature__title">Пунктуальність</h3>
+              <p class="feature__text"
                 >Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p
               >
             </li>
-            <li class="advs-item">
-              <div class="advs-item-header">
-                <svg class="advs-item-icon" width="70" height="70">
+            <li class="feature features__item">
+              <div class="feature__header">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="advs-item-title">Планування</h3>
-              <p class="advs-item-text"
+              <h3 class="feature__title">Планування</h3>
+              <p class="feature__text"
                 >Так само консультація з широким активом значною мірою зумовлює.</p
               >
             </li>
-            <li class="advs-item">
-              <div class="advs-item-header">
-                <svg class="advs-item-icon" width="70" height="70">
+            <li class="feature features__item">
+              <div class="feature__header">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advs-item-title">Сучасні технології</h3>
-              <p class="advs-item-text"
+              <h3 class="feature__title">Сучасні технології</h3>
+              <p class="feature__text"
                 >Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p
               >
             </li>
           </ul>
         </div>
       </section>
-      <!-- Чим займаємось -->
-      <section class="section whatdo">
-        <div class="container">
-          <h2 class="whatdo-title">Чим ми займаємося</h2>
-          <ul class="plist whatdo-list">
-            <li class="whatdo-item"
+
+      <!-- Чим займаємось Ourworks -->
+      <section class="ourworks section">
+        <div class="ourworks__container container">
+          <h2 class="ourworks__title">Чим ми займаємося</h2>
+          <ul class="ourworks__list plist">
+            <li class="ourwork ourworks__item"
               ><img
-                class="whatdo-item-img"
-                src="./images/whatdo/img-1.jpg"
+                class="ourwork__img"
+                src="./images/ourwork/img-1.jpg"
                 alt="Створення веб-сайтів"
                 width="370"
                 height="294"
               />
-              <div class="whatdo-item-description">
+              <div class="ourwork__description">
                 <p>Десктопні додатки</p>
               </div>
             </li>
-            <li class="whatdo-item"
+            <li class="ourwork ourworks__item"
               ><img
-                class="whatdo-item-img"
-                src="./images/whatdo/img-2.jpg"
+                class="ourwork__img"
+                src="./images/ourwork/img-2.jpg"
                 alt="Створення мобільних додатків"
                 width="370"
                 height="294"
               />
-              <div class="whatdo-item-description">
+              <div class="ourwork__description">
                 <p>Мобільні додатки</p>
               </div>
             </li>
-            <li class="whatdo-item"
+            <li class="ourwork ourworks__item"
               ><img
-                class="whatdo-item-img"
-                src="./images/whatdo/img-3.jpg"
+                class="ourwork__img"
+                src="./images/ourwork/img-3.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
                 height="294"
               />
-              <div class="whatdo-item-description">
+              <div class="ourwork__description">
                 <p>Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Наша команда -->
+
+      <!-- Наша команда OurTeam -->
       <section class="section ourteam">
         <div class="container">
-          <h2 class="ourteam-title">Наша команда</h2>
+          <h2 class="ourteam__title">Наша команда</h2>
           <ul class="plist ourteam-list">
             <li class="ourteam-item">
               <img
@@ -440,49 +443,50 @@
           </ul>
         </div>
       </section>
-      <!-- Постійні клієнти -->
-      <section class="section clients">
-        <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
-          <ul class="plist clients-list">
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+
+      <!-- Постійні клієнти Clients -->
+      <section class="clients section">
+        <div class="clients__container container">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list plist">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-link plink" href="#" target="_blank" rel="noopener noreferrer">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="client clients__item">
+              <a class="client__link plink" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="client__logo" width="106" height="60">
                   <use href="./images/icons.svg#logo-6"></use>
                 </svg>
               </a>
@@ -494,16 +498,16 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container container">
         <div class="footer-contacts">
-          <a class="plink logo footer-logo" href="./index.html" lang="en">
-            <span class="accentlogo">Web</span>Studio</a
+          <a class="logo footer__logo plink" href="./index.html" lang="en">
+            <span class="logo__accentpart">Web</span>Studio</a
           >
           <address class="address">
             <ul class="plist footer-contacts-list">
               <li>
                 <a
-                  class="plink footer-contacts-link geoaddr"
+                  class="plink footer__contact-link geoaddr"
                   href="https://goo.gl/maps/AcqfuWZzsQ2Tnh1x8"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -512,12 +516,12 @@
                 </a>
               </li>
               <li lang="en"
-                ><a class="plink footer-contacts-link" href="mailto:info@devstudio.com"
+                ><a class="plink footer__contact-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 ></li
               >
               <li
-                ><a class="plink footer-contacts-link" href="tel:+380961111111"
+                ><a class="plink footer__contact-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 ></li
               >
